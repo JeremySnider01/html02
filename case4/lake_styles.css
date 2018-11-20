@@ -1,0 +1,127 @@
+﻿@charset "utf-8"
+@font-face {
+    font-family: 'Champagne';
+    src: url('cac_champagne.woff') format('woff'),
+    url('cac_champagne.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Dobkin';
+    src: url('DobkinPlain.woff') format('woff'),
+    url('DobkinPlain.ttf') format('truetype');
+}
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Zac and Jeremy
+   Date:   10/1/18
+   
+   Filename: lake_styles.css
+
+*/
+
+/* Structural Styles */
+html {
+    background-color: rgb(189, 183, 107);
+}
+body {
+    background-color: rgb(221, 160, 221);
+    font-family: 'Champagne', sans-serif;
+}
+/* Creates the background color used in the section#rightcol */
+nav a {
+    text-decoration: none;
+}
+footer {
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* Body Header Styles */
+body header {
+    background-color: rgb(139, 0, 139);
+}
+
+/* Navigation Styles */
+header nav ul a {
+    color: rgb(192, 192, 192);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section#rightcol nav ul {
+    list-style-type: none;
+}
+section#rightcol nav ul a {
+    color: rgb(105, 105, 105);
+}
+aside ul {
+    list-style-type: circle;
+}
+
+/* Section Styles */
+section#leftcol {
+    background-color: white;
+}
+section#leftcol > h1 {
+    font-family: 'Dobkin';
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 4px;
+}
+section#leftcol p {
+    font-size: 1.1em;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 0.5em; 
+}
+section#rightcol h2 {
+    font-family: 'Dobkin';
+    font-size: 1.7em;
+    font-weight: normal;
+}
+section#rightcol blockquote {
+    color: rgb(75,0,130);
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-top: 10px;
+}
+section#rightcol blockquote::before {
+    content: '\201C';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section#rightcol blockquote::after {
+    content: '\201D';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* Aside Styles */
+aside h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+aside h2 {
+    font-weight: normal;
+    font-size: 1.3em;
+}
+aside:first-of-type {
+    background-color: rgba(240, 128, 128, 0.95);
+}
+aside:last-of-type {
+    background-color: rgba(218, 165, 32, 0.95);
+}
+aside:last-of-type {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+
+
+
